@@ -20,6 +20,7 @@ def index():
 def wyraz():
     return moje_imie
 
+
 @app.route('/outputs')
 def supported_output():
     return ", ".join(SUPPORTED)
