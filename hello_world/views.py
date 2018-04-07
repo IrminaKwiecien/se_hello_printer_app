@@ -3,7 +3,7 @@ from formater import get_formatted
 from formater import SUPPORTED, PLAIN
 from flask import request
 
-moje_imie = "Irmina"
+moje_imie = "Helena"
 msg = "Hello World!"
 
 
@@ -16,7 +16,7 @@ def index():
                          output.lower())
 
 
-@app.route('/Irmina')
+@app.route('/Helena')
 def wyraz():
     return moje_imie
 
