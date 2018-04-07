@@ -10,4 +10,8 @@ script:
   - make lint
   - make docker_build
   - make docker_push
-  
+
+deploy:
+  provider: heroku
+  app: arcane-basin-85738
+  api_key: ${HEROKU_API_KEY}
